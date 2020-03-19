@@ -46,7 +46,7 @@ Inspired by [A PEN BY Ahmed Nasr](https://codepen.io/ahmedhosna95/pen/KKpvNGY)
 | `--color-background`  | The background color |
 | `--color-primary`     | The main color       |
 | `--heading-font-size` | Heading font size    |
-| `--text-font`         | Text font size       |
+| `--text-font-size`    | Text font size       |
 
 
 ----------------------------------------------

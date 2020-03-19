@@ -34,6 +34,7 @@ Stripe background gradient with blocks of solid colors
 | `--block-grid-area-4` | Grid area of a block, up to the 5th. For more use parts |
 | `--block-grid-area-5` | Grid area of a block, up to the 5th. For more use parts |
 | `--gradient`          | The main gradient                                       |
+| `--transform`         | The transform                                           |
 
 
 ----------------------------------------------
