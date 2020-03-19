@@ -1,7 +1,7 @@
 {
-  "name": "genie",
+  "name": "genie-component-library",
   "version": "0.0.1",
-  "description": "Stencil Component Starter",
+  "description": "Genie Component Library",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
   "es2015": "dist/esm/index.mjs",
