@@ -12,6 +12,10 @@ export namespace Components {
          */
         "cardIsLink": boolean;
         "heading": string;
+        /**
+          * Open link in new window
+         */
+        "newWindow": boolean;
         "text": string;
         "url": string;
     }
@@ -47,6 +51,10 @@ declare namespace LocalJSX {
          */
         "cardIsLink"?: boolean;
         "heading"?: string;
+        /**
+          * Open link in new window
+         */
+        "newWindow"?: boolean;
         "text"?: string;
         "url"?: string;
     }
