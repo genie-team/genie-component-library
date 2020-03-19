@@ -1,6 +1,8 @@
 # genie-card
 
-A simple card with link icon
+A simple card with link icon.
+
+Inspired by [A PEN BY Ahmed Nasr](https://codepen.io/ahmedhosna95/pen/KKpvNGY)
 
 
 <!-- Auto Generated Below -->
