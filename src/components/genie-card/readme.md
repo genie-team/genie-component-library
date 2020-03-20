@@ -38,19 +38,6 @@ Inspired by [A PEN BY Ahmed Nasr](https://codepen.io/ahmedhosna95/pen/KKpvNGY)
 | `"card-text"`    | Card Text         |
 
 
-## CSS Custom Properties
-
-| Name                  | Description                 |
-| --------------------- | --------------------------- |
-| `--a-border-radius`   | Border radius of the anchor |
-| `--border-radius`     | Border radius of the card   |
-| `--color-accent`      | The accent color            |
-| `--color-background`  | The background color        |
-| `--color-primary`     | The main color              |
-| `--heading-font-size` | Heading font size           |
-| `--text-font-size`    | Text font size              |
-
-
 ----------------------------------------------
 
 *Built with [StencilJS](https://stenciljs.com/)*

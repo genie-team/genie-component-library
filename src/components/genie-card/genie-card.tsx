@@ -1,4 +1,4 @@
-import { Component, Prop, h, Listen } from "@stencil/core";
+import { Component, Prop, h, Listen, Host } from "@stencil/core";
 
 /**
  * @slot - Content is placed between the heading and text
@@ -60,8 +60,8 @@ export class GenieCard {
 				</a>
       );
     }
-    return [
-      <div
+    return (
+      <Host
         part="card"
         class={{
           "has-link": !!this.url,
@@ -74,7 +74,7 @@ export class GenieCard {
         <p part="card-text">{this.text}</p>
         <slot name="end"></slot>
         {link}
-      </div>
-    ];
+      </Host>
+    );
   }
 }
