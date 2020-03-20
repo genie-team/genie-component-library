@@ -31,16 +31,18 @@ export class GenieCard {
    */
   @Prop() newWindow: boolean = false;
 
-  @Listen("click", { capture: true })
+  @Listen("click")
   handleClick(ev) {
-    if (this.cardIsLink && this.url) {
-      if (this.newWindow) {
-        window.open(this.url);
-      } else {
-        location.href = this.url;
-      }
-      ev.preventDefault();
-    }
+		if(ev.target.tagName.toLowerCase() !== 'a') {
+			if (this.cardIsLink && this.url) {
+				if (this.newWindow) {
+					window.open(this.url);
+				} else {
+					location.href = this.url;
+				}
+				ev.preventDefault();
+			}
+		}
   }
 
   render() {
