@@ -15,6 +15,7 @@ Inspired by [A PEN BY Ahmed Nasr](https://codepen.io/ahmedhosna95/pen/KKpvNGY)
 | `cardIsLink` | `card-is-link` | If url provided and true the whole card will be a link | `boolean` | `true`      |
 | `heading`    | `heading`      |                                                        | `string`  | `undefined` |
 | `newWindow`  | `new-window`   | Open link in new window                                | `boolean` | `false`     |
+| `noHover`    | `no-hover`     | Don't alter style on hover                             | `boolean` | `false`     |
 | `text`       | `text`         |                                                        | `string`  | `undefined` |
 | `url`        | `url`          |                                                        | `string`  | `undefined` |
 
@@ -36,6 +37,19 @@ Inspired by [A PEN BY Ahmed Nasr](https://codepen.io/ahmedhosna95/pen/KKpvNGY)
 | `"card-heading"` | Card Heading      |
 | `"card-link"`    | Card Link         |
 | `"card-text"`    | Card Text         |
+
+
+## CSS Custom Properties
+
+| Name                  | Description                 |
+| --------------------- | --------------------------- |
+| `--a-border-radius`   | Border radius of the anchor |
+| `--border-radius`     | Border radius of the card   |
+| `--color-accent`      | The accent color            |
+| `--color-background`  | The background color        |
+| `--color-primary`     | The main color              |
+| `--heading-font-size` | Heading font size           |
+| `--text-font-size`    | Text font size              |
 
 
 ----------------------------------------------

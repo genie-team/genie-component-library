@@ -16,6 +16,10 @@ export namespace Components {
           * Open link in new window
          */
         "newWindow": boolean;
+        /**
+          * Don't alter style on hover
+         */
+        "noHover": boolean;
         "text": string;
         "url": string;
     }
@@ -55,6 +59,10 @@ declare namespace LocalJSX {
           * Open link in new window
          */
         "newWindow"?: boolean;
+        /**
+          * Don't alter style on hover
+         */
+        "noHover"?: boolean;
         "text"?: string;
         "url"?: string;
     }

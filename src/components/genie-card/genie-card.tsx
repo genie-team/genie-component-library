@@ -29,7 +29,12 @@ export class GenieCard {
   /**
    * Open link in new window
    */
-  @Prop() newWindow: boolean = false;
+	@Prop() newWindow: boolean = false;
+	
+	 /**
+   * Don't alter style on hover
+   */
+  @Prop() noHover: boolean = false;
 
   @Listen("click")
   handleClick(ev) {
@@ -65,7 +70,8 @@ export class GenieCard {
         part="card"
         class={{
           "has-link": !!this.url,
-          "card-is-link": !!this.cardIsLink && !!this.url
+					"card-is-link": !!this.cardIsLink && !!this.url,
+					"no-hover": this.noHover
         }}
       >
         <slot name="start"></slot>
