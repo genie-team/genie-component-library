@@ -1,6 +1,6 @@
 {
   "name": "genie-component-library",
-  "version": "0.8.0",
+  "version": "0.9.0",
   "description": "Genie Component Library",
   "main": "dist/index.js",
   "module": "dist/index.mjs",

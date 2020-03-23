@@ -6,6 +6,10 @@
 	 * @prop --text-font-size: Text font size
 	 * @prop --border-radius: Border radius of the card
 	 * @prop --a-border-radius: Border radius of the anchor
+	 * @prop --text-color-override: Manually set text color when not hovered
+	 * @prop --heading-color-override: Manually set the heading color when not hovered
+	 * @prop --text-color-override-hover: Manually set text color when hovered
+	 * @prop --heading-color-override-hover: Manually set the heading color when hovered
 	 */
 :host {
   --color-primary: rgb(80, 63, 157);
@@ -14,7 +18,11 @@
   --heading-font-size: 30px;
   --text-font-size: 15px;
   --border-radius: 25px;
-  --a-border-radius: 0 25px;
+	--a-border-radius: 0 25px;
+	--text-color-override: var(--color-primary);
+	--heading-color-override: var(--color-primary);
+	--text-color-override-hover: var(--color-background);
+	--heading-color-override-hover: var(--color-background);
   font-size: 100%; // ~10px
   line-height: 1.6;
   box-sizing: border-box;
@@ -29,8 +37,7 @@
   z-index: 1;
 
   h3 {
-    color: var(--color-primary);
-    letter-spacing: -0.04em;
+    color: var(--heading-color-override);
     line-height: 1.2;
     font-size: var(--heading-font-size);
   }
@@ -58,7 +65,7 @@
 
   p {
     font-size: var(--text-font-size);
-    color: var(--color-primary);
+    color: var(--text-color-override);
   }
 }
 :host(.card-is-link) {
@@ -68,11 +75,11 @@
 	background-color: var(--color-accent);
 
 	h3 {
-		color: var(--color-background);
+    color: var(--heading-color-override-hover);
 	}
 
 	p {
-		color: var(--color-background);
+    color: var(--text-color-override-hover);
 	}
 
 	a {

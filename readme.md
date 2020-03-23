@@ -21,7 +21,7 @@
 ### Script tag
 
 - [Publish to NPM](https://docs.npmjs.com/getting-started/publishing-npm-packages)
-- Put a script tag similar to this `<script src='https://unpkg.com/genie-component-library@0.8.0/dist/genie.js'></script>` in the head of your index.html
+- Put a script tag similar to this `<script src='https://unpkg.com/genie-component-library@0.9.0/dist/genie.js'></script>` in the head of your index.html
 - Then you can use the element anywhere in your template, JSX, html etc
 
 ### Node Modules

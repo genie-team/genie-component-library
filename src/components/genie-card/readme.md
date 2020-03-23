@@ -41,15 +41,19 @@ Inspired by [A PEN BY Ahmed Nasr](https://codepen.io/ahmedhosna95/pen/KKpvNGY)
 
 ## CSS Custom Properties
 
-| Name                  | Description                 |
-| --------------------- | --------------------------- |
-| `--a-border-radius`   | Border radius of the anchor |
-| `--border-radius`     | Border radius of the card   |
-| `--color-accent`      | The accent color            |
-| `--color-background`  | The background color        |
-| `--color-primary`     | The main color              |
-| `--heading-font-size` | Heading font size           |
-| `--text-font-size`    | Text font size              |
+| Name                             | Description                                     |
+| -------------------------------- | ----------------------------------------------- |
+| `--a-border-radius`              | Border radius of the anchor                     |
+| `--border-radius`                | Border radius of the card                       |
+| `--color-accent`                 | The accent color                                |
+| `--color-background`             | The background color                            |
+| `--color-primary`                | The main color                                  |
+| `--heading-color-override`       | Manually set the heading color when not hovered |
+| `--heading-color-override-hover` | Manually set the heading color when hovered     |
+| `--heading-font-size`            | Heading font size                               |
+| `--text-color-override`          | Manually set text color when not hovered        |
+| `--text-color-override-hover`    | Manually set text color when hovered            |
+| `--text-font-size`               | Text font size                                  |
 
 
 ----------------------------------------------
