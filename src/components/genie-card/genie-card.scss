@@ -34,7 +34,7 @@ $defaultABorderRadius: 0 25px;
   z-index: 1;
 
   h3 {
-    color: var(--heading-color-override, $defaultPrimary);
+    color: var(--heading-color-override, var(--color-primary, $defaultPrimary));
     line-height: 1.2;
     font-size: var(--heading-font-size, $defaultHeadingFontSize);
   }
@@ -62,27 +62,33 @@ $defaultABorderRadius: 0 25px;
 
   p {
     font-size: var(--text-font-size, $defaultTextFontSize);
-    color: var(--text-color-override, $defaultPrimary);
+    color: var(--text-color-override, var(--color-primary, $defaultPrimary));
   }
 }
 :host(.card-is-link) {
-	cursor: pointer;
+  cursor: pointer;
 }
 :host(:hover:not(.no-hover)) {
-	background-color: var(--color-accent, $defaultAccent);
+  background-color: var(--color-accent, $defaultAccent);
 
-	h3 {
-    color: var(--heading-color-override-hover, $defaultBackground);
-	}
+  h3 {
+    color: var(
+      --heading-color-override-hover,
+      var(--color-background, $defaultBackground)
+    );
+  }
 
-	p {
-    color: var(--text-color-override-hover, $defaultBackground);
-	}
+  p {
+    color: var(
+      --text-color-override-hover,
+      var(--color-background, $defaultBackground)
+    );
+  }
 
-	a {
-		background-color: var(--color-background, $defaultBackground);
-		svg {
-			stroke: var(--color-accent, $defaultAccent);
-		}
-	}
+  a {
+    background-color: var(--color-background, $defaultBackground);
+    svg {
+      stroke: var(--color-accent, $defaultAccent);
+    }
+  }
 }
