@@ -78,7 +78,9 @@ export class GenieCard {
       : ("div" as any);
     const attrs =
       TagType === "button"
-        ? { type: this.type }
+				? { type: this.type,
+					onClick: (ev: Event) => openURL(href, ev)
+				}
         : TagType === "a"
         ? {
             download: this.download,
