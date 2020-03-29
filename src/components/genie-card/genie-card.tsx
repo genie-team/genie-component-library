@@ -84,7 +84,9 @@ export class GenieCard {
             download: this.download,
             href: this.href,
             rel: this.rel,
-            target: this.target
+						target: this.target,
+						onClick: (ev: Event) => openURL(href, ev)
+
           }
         : {};
 
@@ -154,7 +156,6 @@ export class GenieCard {
           {...attrs}
           class="card-native"
           disabled={this.disabled}
-          onClick={(ev: Event) => openURL(href, ev)}
         >
           <slot name="start"></slot>
           <h3 part="card-heading">{this.heading}</h3>
