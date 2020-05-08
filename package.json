@@ -22,10 +22,14 @@
     "generate": "stencil generate"
   },
   "devDependencies": {
-    "@stencil/core": "^1.8.8"
+    "@stencil/core": "^1.8.8",
+    "rollup-plugin-copy": "^3.3.0"
   },
   "license": "MIT",
   "dependencies": {
-    "@stencil/sass": "^1.1.1"
+    "@stencil/sass": "^1.1.1",
+    "pdfjs-dist": "^2.3.200",
+    "rollup-plugin-node-builtins": "^2.1.2",
+    "rollup-plugin-node-globals": "^1.4.0"
   }
 }

@@ -42,6 +42,8 @@ export namespace Components {
          */
         "type": "submit" | "reset" | "button";
     }
+    interface GeniePdf {
+    }
     interface GenieStripe {
         /**
           * Number of blocks in the stripe
@@ -56,6 +58,12 @@ declare global {
         prototype: HTMLGenieCardElement;
         new (): HTMLGenieCardElement;
     };
+    interface HTMLGeniePdfElement extends Components.GeniePdf, HTMLStencilElement {
+    }
+    var HTMLGeniePdfElement: {
+        prototype: HTMLGeniePdfElement;
+        new (): HTMLGeniePdfElement;
+    };
     interface HTMLGenieStripeElement extends Components.GenieStripe, HTMLStencilElement {
     }
     var HTMLGenieStripeElement: {
@@ -64,6 +72,7 @@ declare global {
     };
     interface HTMLElementTagNameMap {
         "genie-card": HTMLGenieCardElement;
+        "genie-pdf": HTMLGeniePdfElement;
         "genie-stripe": HTMLGenieStripeElement;
     }
 }
@@ -104,6 +113,8 @@ declare namespace LocalJSX {
          */
         "type"?: "submit" | "reset" | "button";
     }
+    interface GeniePdf {
+    }
     interface GenieStripe {
         /**
           * Number of blocks in the stripe
@@ -112,6 +123,7 @@ declare namespace LocalJSX {
     }
     interface IntrinsicElements {
         "genie-card": GenieCard;
+        "genie-pdf": GeniePdf;
         "genie-stripe": GenieStripe;
     }
 }
@@ -120,6 +132,7 @@ declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
             "genie-card": LocalJSX.GenieCard & JSXBase.HTMLAttributes<HTMLGenieCardElement>;
+            "genie-pdf": LocalJSX.GeniePdf & JSXBase.HTMLAttributes<HTMLGeniePdfElement>;
             "genie-stripe": LocalJSX.GenieStripe & JSXBase.HTMLAttributes<HTMLGenieStripeElement>;
         }
     }
