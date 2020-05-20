@@ -28,7 +28,7 @@ export const config: Config = {
       builtins(),
       copy({
         targets: [
-          { src: 'src/static/**/*', dest: 'www/static' }
+          { src: 'node_modules/pdfjs-dist/build/pdf.worker.min.js', dest: ['www/build/js', 'dist/genie/js'] }
         ],
         verbose: true
       })
