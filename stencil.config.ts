@@ -9,8 +9,8 @@ export const config: Config = {
   namespace: 'genie',
   outputTargets: [
     reactOutputTarget({
-      componentCorePackage: 'genie-component-library',
-      proxiesFile: '../genie-component-library-react/src/components.ts',
+      componentCorePackage: '../../src',
+      proxiesFile: 'genie-component-library-react/src/components.ts',
     }),
     {
       type: 'dist',
