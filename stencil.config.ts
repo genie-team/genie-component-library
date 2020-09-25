@@ -3,10 +3,15 @@ import { sass } from '@stencil/sass';
 import builtins from 'rollup-plugin-node-builtins';
 import globals from 'rollup-plugin-node-globals';
 import copy from 'rollup-plugin-copy'
+import { reactOutputTarget } from '@stencil/react-output-target';
 
 export const config: Config = {
   namespace: 'genie',
   outputTargets: [
+    reactOutputTarget({
+      componentCorePackage: 'genie-component-library',
+      proxiesFile: '../genie-component-library-react/src/components.ts',
+    }),
     {
       type: 'dist',
       esmLoaderPath: '../loader'
